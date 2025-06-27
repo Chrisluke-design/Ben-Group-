@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy and Refund Policy - BEN GROUP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --royal-blue: #4169E1;
+            --dark-blue: #1e3a8a;
+            --light-blue: #dbeafe;
+            --gold: #fbbf24;
+            --white: #ffffff;
+            --gray: #6b7280;
+            --dark-gray: #374151;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--royal-blue), var(--dark-blue));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        .back-link {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .terms-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .terms-header {
+            background: linear-gradient(135deg, var(--royal-blue), var(--dark-blue));
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .terms-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .terms-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .last-updated {
+            background: var(--light-blue);
+            padding: 20px 40px;
+            border-left: 4px solid var(--royal-blue);
+            margin: 0;
+        }
+
+        .last-updated strong {
+            color: var(--royal-blue);
+        }
+
+        .terms-content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: var(--royal-blue);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--light-blue);
+        }
+
+        .section h3 {
+            color: var(--dark-blue);
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--light-blue), rgba(251, 191, 36, 0.1));
+            border: 1px solid var(--royal-blue);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--royal-blue);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .contact-section {
+            background: var(--royal-blue);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-icon {
+            color: var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .terms-header h1 {
+                font-size: 2rem;
+            }
+
+            .terms-content {
+                padding: 30px 20px;
+            }
+
+            .last-updated {
+                padding: 15px 20px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            header, footer {
+                display: none;
+            }
+            
+            .terms-container {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+            
+            .terms-header {
+                background: white !important;
+                color: black !important;
+                border-bottom: 2px solid #ccc;
+            }
+            
+            .contact-section {
+                background: white !important;
+                color: black !important;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">BEN GROUP</a>
+            <a href="javascript:history.back()" class="back-link">← Back to Main Site</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="terms-container">
+                <div class="terms-header">
+                    <h1>Privacy & Refund Policy</h1>
+                    <p>Billionaire Estators Nation Limited (BEN GROUP)</p>
+                </div>
+
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> June 2025
+                </div>
+
+                <div class="terms-content">
+                    <div class="section">
+                        <h2>1. Introduction to Our Policies</h2>
+                        <p>Welcome to Billionaire Estators Nation Limited (BEN GROUP). This Privacy and Refund Policy outlines how we collect, use, protect, and handle your personal information and details our policies regarding investment refunds. By engaging with BEN GROUP, investing in our syndication opportunities, or using our services, you acknowledge that you have read, understood, and agree to be bound by these policies.</p>
+                        
+                        <div class="highlight-box">
+                            <h4>Important Notice:</h4>
+                            <p>Real estate syndication investments involve significant risks. Please review all terms carefully. Refund policies are strictly adhered to as outlined herein.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>2. Company Information</h2>
+                        <p><strong>Company Name:</strong> Billionaire Estators Nation Limited (BEN GROUP)</p>
+                        <p><strong>Business Focus:</strong> Professional Real Estate Syndication and Investment Management</p>
+                        <p><strong>Headquarters:</strong> ODIM GATE, ODIM STREET AJUONA OBUKPA UNN</p>
+                        <p><strong>Branch Office:</strong> Opposite ESUT Main Gate, Agbani, Enugu State</p>
+                        <p><strong>Corporate Bank Account:</strong> Fidelity Bank - 5601450259 (Billionaire Estators Nation Limited)</p>
+                        <p><strong>Contact:</strong> WhatsApp: 08032219339, 08076148738</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>3. Privacy Policy</h2>
+                        <h3>3.1 Information Collection</h3>
+                        <p>We collect personal information to provide our investment services, including but not limited to:</p>
+                        <ul>
+                            <li><strong>Personal Identification:</strong> Name, address, date of birth, national ID, and other government-issued identification.</li>
+                            <li><strong>Contact Information:</strong> Email address, phone number.</li>
+                            <li><strong>Financial Information:</strong> Bank account details, investment amounts, income, and other financial data necessary for assessing eligibility and processing transactions.</li>
+                            <li><strong>Transactional Data:</strong> Records of your investments, payments, and communications with us.</li>
+                        </ul>
+
+                        <h3>3.2 How We Use Your Information</h3>
+                        <p>Your information is used for the following purposes:</p>
+                        <ul>
+                            <li>To process your investments and manage your portfolio.</li>
+                            <li>To communicate with you regarding investment opportunities, updates, and reports.</li>
+                            <li>To comply with legal and regulatory requirements (e.g., anti-money laundering laws).</li>
+                            <li>To improve our services and customize your experience.</li>
+                            <li>For internal record keeping and administrative purposes.</li>
+                        </ul>
+
+                        <h3>3.3 Information Sharing and Disclosure</h3>
+                        <p>We do not sell or rent your personal information to third parties. Your information may be shared with:</p>
+                        <ul>
+                            <li>Legal and accounting professionals as required for business operations and compliance.</li>
+                            <li>Regulatory authorities when mandated by law.</li>
+                            <li>Service providers (e.g., payment processors, auditors) who assist us in delivering our services, under strict confidentiality agreements.</li>
+                            <li>As part of a merger, acquisition, or sale of assets, with appropriate confidentiality safeguards.</li>
+                        </ul>
+
+                        <h3>3.4 Data Security</h3>
+                        <p>BEN GROUP employs robust security measures, including encryption, firewalls, and secure server facilities, to protect your personal and financial data from unauthorized access, alteration, disclosure, or destruction. We regularly review our security practices to ensure the highest level of protection.</p>
+
+                        <h3>3.5 Your Rights</h3>
+                        <p>You have the right to:</p>
+                        <ul>
+                            <li>Access and request a copy of the personal data we hold about you.</li>
+                            <li>Request correction of inaccurate or incomplete data.</li>
+                            <li>Request deletion of your personal data, subject to legal and regulatory retention requirements.</li>
+                            <li>Object to the processing of your data in certain circumstances.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>4. Refund Policy</h2>
+                        <h3>4.1 Investment Commitments</h3>
+                        <p>All investment commitments made to BEN GROUP for real estate syndication, agricultural production, or strategic business investments are generally **non-refundable** once funds have been deployed into the specific project. This is due to the illiquid nature of real estate and pooled investment structures.</p>
+
+                        <h3>4.2 Exceptions for Refund</h3>
+                        <p>Refunds may be considered only under the following exceptional circumstances:</p>
+                        <ul>
+                            <li><strong>Project Cancellation:</strong> If BEN GROUP cancels an investment project before funds are deployed, a full refund of your committed capital will be issued within 14 business days.</li>
+                            <li><strong>Failure to Meet Project Minimums:</strong> If a project does not reach its minimum funding target, your invested capital will be fully refunded within 14 business days.</li>
+                            <li><strong>Material Breach by BEN GROUP:</strong> In the event of a proven material breach of the investment agreement by BEN GROUP that fundamentally impacts your investment, refunds will be handled on a case-by-case basis, subject to arbitration as outlined in our Terms and Conditions.</li>
+                        </ul>
+
+                        <h3>4.3 Refund Process</h3>
+                        <p>For eligible refunds, the process is as follows:</p>
+                        <ul>
+                            <li><strong>Notification:</strong> You will be notified by BEN GROUP regarding the eligibility of your refund.</li>
+                            <li><strong>Verification:</strong> We will verify your original investment details and payment method.</li>
+                            <li><strong>Processing:</strong> Refunds will be processed back to the original payment method or directly to your bank account (Fidelity Bank: Account Number: 5601450259, Account Name: Billionaire Estators Nation Limited) within the specified timeframe (typically 14 business days). Please note that processing times may vary based on your bank.</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <h4>No Refunds for Investment Performance:</h4>
+                            <p>Losses incurred due to market fluctuations, poor investment performance, or any of the inherent risks disclosed in our investment memorandums are not eligible for a refund. Investors assume the risks associated with real estate and business investments.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>5. Modifications and Updates</h2>
+                        <p>BEN GROUP reserves the right to modify this Privacy and Refund Policy at any time. Material changes will be communicated to investors through our official channels with reasonable advance notice. Your continued engagement with our services or investments after such modifications constitutes your acceptance of the updated policies.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>6. Governing Law and Dispute Resolution</h2>
+                        <p>These policies shall be governed by and construed in accordance with the laws of the Federal Republic of Nigeria. Any disputes arising from these policies will be resolved in accordance with the dispute resolution process outlined in our general Terms and Conditions.</p>
+                    </div>
+
+                    <div class="contact-section">
+                        <h3>Questions About These Policies?</h3>
+                        <p>If you have questions about our Privacy & Refund Policy or our investment services, please contact us:</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <span>08032219339 | 08076148738</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🏢</span>
+                                <span>ODIM GATE, ODIM STREET AJUONA OBUKPA UNN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Billionaire Estators Nation Limited (BEN GROUP). All rights reserved. | <a href="privacy.html" style="color: var(--gold);">Privacy Policy</a> | <a href="terms.html" style="color: var(--gold);">Terms and Conditions</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Print functionality
+        function printTerms() {
+            window.print();
+        }
+
+        // Smooth scrolling for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(20px)';
+                    entry.target.style.transition = 'all 0.6s ease';
+                    
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animation
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
