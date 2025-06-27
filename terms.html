@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - BEN GROUP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --royal-blue: #4169E1;
+            --dark-blue: #1e3a8a;
+            --light-blue: #dbeafe;
+            --gold: #fbbf24;
+            --white: #ffffff;
+            --gray: #6b7280;
+            --dark-gray: #374151;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--royal-blue), var(--dark-blue));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        .back-link {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .terms-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .terms-header {
+            background: linear-gradient(135deg, var(--royal-blue), var(--dark-blue));
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .terms-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .terms-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .last-updated {
+            background: var(--light-blue);
+            padding: 20px 40px;
+            border-left: 4px solid var(--royal-blue);
+            margin: 0;
+        }
+
+        .last-updated strong {
+            color: var(--royal-blue);
+        }
+
+        .terms-content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: var(--royal-blue);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--light-blue);
+        }
+
+        .section h3 {
+            color: var(--dark-blue);
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--light-blue), rgba(251, 191, 36, 0.1));
+            border: 1px solid var(--royal-blue);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--royal-blue);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .contact-section {
+            background: var(--royal-blue);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-icon {
+            color: var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .terms-header h1 {
+                font-size: 2rem;
+            }
+
+            .terms-content {
+                padding: 30px 20px;
+            }
+
+            .last-updated {
+                padding: 15px 20px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            header, footer {
+                display: none;
+            }
+            
+            .terms-container {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+            
+            .terms-header {
+                background: white !important;
+                color: black !important;
+                border-bottom: 2px solid #ccc;
+            }
+            
+            .contact-section {
+                background: white !important;
+                color: black !important;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">BEN GROUP</a>
+            <a href="javascript:history.back()" class="back-link">← Back to Main Site</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="terms-container">
+                <div class="terms-header">
+                    <h1>Terms and Conditions</h1>
+                    <p>Billionaire Estators Nation Limited (BEN GROUP)</p>
+                </div>
+
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> January 2025
+                </div>
+
+                <div class="terms-content">
+                    <div class="section">
+                        <h2>1. Introduction and Acceptance</h2>
+                        <p>Welcome to Billionaire Estators Nation Limited (BEN GROUP). These Terms and Conditions ("Terms") govern your participation in our real estate syndication investment programs and use of our services. By engaging with BEN GROUP, investing in our syndication opportunities, or using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
+                        
+                        <div class="highlight-box">
+                            <h4>Important Notice:</h4>
+                            <p>Real estate syndication investments involve significant risks and are suitable only for qualified investors who can afford to lose their entire investment. Past performance does not guarantee future results.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>2. Company Information</h2>
+                        <p><strong>Company Name:</strong> Billionaire Estators Nation Limited (BEN GROUP)</p>
+                        <p><strong>Business Focus:</strong> Professional Real Estate Syndication and Investment Management</p>
+                        <p><strong>Headquarters:</strong> ODIM GATE, ODIM STREET AJUONA OBUKPA UNN</p>
+                        <p><strong>Branch Office:</strong> Opposite ESUT Main Gate, Agbani, Enugu State</p>
+                        <p><strong>Contact:</strong> WhatsApp: 08032219339, 08076148738</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>3. Investment Services and Syndication Model</h2>
+                        <h3>3.1 Service Overview</h3>
+                        <p>BEN GROUP operates as a real estate syndication group, pooling investor capital to acquire and manage:</p>
+                        <ul>
+                            <li>Commercial real estate properties</li>
+                            <li>Agricultural production investments</li>
+                            <li>Strategic business investments</li>
+                        </ul>
+
+                        <h3>3.2 Syndication Structure</h3>
+                        <p>Our syndication model allows multiple investors to participate in larger investment opportunities through pooled resources. Each investment opportunity will have specific terms, minimum investment requirements, and projected returns detailed in separate investment memorandums.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>4. Investor Eligibility and Requirements</h2>
+                        <h3>4.1 Qualified Investors</h3>
+                        <p>Participation in BEN GROUP syndication opportunities is limited to qualified investors who meet the following criteria:</p>
+                        <ul>
+                            <li>Legal age of majority (18 years or older)</li>
+                            <li>Sufficient financial resources to sustain potential loss of investment</li>
+                            <li>Understanding of real estate investment risks</li>
+                            <li>Compliance with applicable securities regulations</li>
+                        </ul>
+
+                        <h3>4.2 Investment Minimums</h3>
+                        <p>Minimum investment amounts vary by project and will be specified in individual investment offerings. Investors must be able to meet these minimums to participate.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>5. Investment Process and Documentation</h2>
+                        <h3>5.1 Due Diligence</h3>
+                        <p>Before participating in any investment, investors are encouraged to:</p>
+                        <ul>
+                            <li>Review all provided investment documentation</li>
+                            <li>Conduct independent research on proposed investments</li>
+                            <li>Consult with personal financial and legal advisors</li>
+                            <li>Understand all risks associated with the investment</li>
+                        </ul>
+
+                        <h3>5.2 Investment Documentation</h3>
+                        <p>Each investment opportunity will include detailed documentation outlining terms, conditions, risks, and projected returns. Investors must review and acknowledge understanding of all documentation before investing.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>6. Risks and Disclaimers</h2>
+                        <div class="highlight-box">
+                            <h4>Risk Warning:</h4>
+                            <p>Real estate syndication investments carry inherent risks including but not limited to:</p>
+                        </div>
+                        <ul>
+                            <li><strong>Market Risk:</strong> Property values may decline due to market conditions</li>
+                            <li><strong>Liquidity Risk:</strong> Investments may not be easily convertible to cash</li>
+                            <li><strong>Management Risk:</strong> Poor property management may affect returns</li>
+                            <li><strong>Economic Risk:</strong> Economic downturns may impact property performance</li>
+                            <li><strong>Regulatory Risk:</strong> Changes in laws may affect investment returns</li>
+                            <li><strong>Total Loss:</strong> Investors may lose their entire investment</li>
+                        </ul>
+
+                        <h3>6.1 No Guarantee of Returns</h3>
+                        <p>BEN GROUP makes no guarantees regarding investment returns, capital preservation, or investment performance. All projected returns are estimates based on current market conditions and assumptions that may not materialize.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>7. Fees and Compensation</h2>
+                        <p>BEN GROUP's compensation structure will be detailed in each investment offering and may include:</p>
+                        <ul>
+                            <li>Management fees for ongoing property management</li>
+                            <li>Performance fees based on investment returns</li>
+                            <li>Administrative fees for transaction processing</li>
+                            <li>Asset management fees for portfolio oversight</li>
+                        </ul>
+                        <p>All fees will be clearly disclosed before investment commitment.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>8. Investor Rights and Responsibilities</h2>
+                        <h3>8.1 Investor Rights</h3>
+                        <ul>
+                            <li>Right to receive regular investment updates and reports</li>
+                            <li>Right to review financial statements and performance data</li>
+                            <li>Right to participate in major investment decisions as outlined in investment agreements</li>
+                            <li>Right to receive distributions as specified in investment terms</li>
+                        </ul>
+
+                        <h3>8.2 Investor Responsibilities</h3>
+                        <ul>
+                            <li>Provide accurate financial and personal information</li>
+                            <li>Make investment payments as committed and scheduled</li>
+                            <li>Maintain confidentiality of investment information</li>
+                            <li>Comply with all applicable laws and regulations</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>9. Confidentiality and Data Protection</h2>
+                        <p>BEN GROUP is committed to protecting investor privacy and confidential information. We implement appropriate security measures to safeguard personal and financial data. Information collected is used solely for investment management and regulatory compliance purposes.</p>
+
+                        <h3>9.1 Information Sharing</h3>
+                        <p>Investor information may be shared with:</p>
+                        <ul>
+                            <li>Legal and accounting professionals as required</li>
+                            <li>Regulatory authorities when mandated by law</li>
+                            <li>Service providers necessary for investment management</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>10. Limitation of Liability</h2>
+                        <p>To the fullest extent permitted by law, BEN GROUP, its officers, directors, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to investments or services provided.</p>
+
+                        <p>BEN GROUP's total liability to any investor shall not exceed the amount of capital contributed by that investor to the specific investment giving rise to the claim.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>11. Dispute Resolution</h2>
+                        <h3>11.1 Governing Law</h3>
+                        <p>These Terms shall be governed by and construed in accordance with the laws of the Federal Republic of Nigeria.</p>
+
+                        <h3>11.2 Dispute Resolution Process</h3>
+                        <p>Any disputes arising from these Terms or investment relationships shall be resolved through:</p>
+                        <ul>
+                            <li>Good faith negotiation between parties</li>
+                            <li>Mediation if negotiation fails</li>
+                            <li>Arbitration or court proceedings as a last resort</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>12. Modifications and Updates</h2>
+                        <p>BEN GROUP reserves the right to modify these Terms at any time. Material changes will be communicated to investors with reasonable advance notice. Continued participation in investments after term modifications constitutes acceptance of the updated Terms.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>13. Termination</h2>
+                        <p>BEN GROUP may terminate investor relationships for breach of these Terms, failure to meet investment commitments, or violation of applicable laws. Investors may withdraw from future investment opportunities but remain bound by existing investment agreements.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>14. Regulatory Compliance</h2>
+                        <p>BEN GROUP operates in compliance with applicable Nigerian securities laws and regulations. Investors are responsible for ensuring their participation complies with all applicable laws in their jurisdiction.</p>
+
+                        <div class="highlight-box">
+                            <h4>Professional Advice:</h4>
+                            <p>Investors are strongly encouraged to consult with qualified legal, tax, and financial advisors before making any investment decisions.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-section">
+                        <h3>Questions About These Terms?</h3>
+                        <p>If you have questions about these Terms and Conditions or our investment services, please contact us:</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <span>08032219339 | 08076148738</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🏢</span>
+                                <span>ODIM GATE, ODIM STREET AJUONA OBUKPA UNN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Billionaire Estators Nation Limited (BEN GROUP). All rights reserved. | <a href="#" style="color: var(--gold);">Privacy Policy</a> | <a href="#" style="color: var(--gold);">Terms and Conditions</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Print functionality
+        function printTerms() {
+            window.print();
+        }
+
+        // Smooth scrolling for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(20px)';
+                    entry.target.style.transition = 'all 0.6s ease';
+                    
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animation
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
